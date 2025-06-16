@@ -9,8 +9,8 @@ class TeleopControl(Node):
     def __init__(self):
         super().__init__('teleop_control')
         self.publisher = self.create_publisher(Twist, '/cmd_vel', 10)
-        self.linear_speed = 0.5
-        self.angular_speed = 1.0
+        self.linear_speed = 0.3
+        self.angular_speed = 0.1
         self.get_logger().info("Teleop Control Node Initialized. Use W/A/S/D to control. Press Q to quit.")
 
     def get_key(self):

@@ -46,7 +46,7 @@ class MotorControl(Node):
 
     def listener_callback(self, msg):
         linear = msg.linear.x    # 전후진
-        angular = msg.angular.z  # 좌우회전
+        angular = max(min(msg.angular.z, 0.5), -0.5)  # 좌우회전
 
         # 기본 속도 계산
         left_speed = linear - angular

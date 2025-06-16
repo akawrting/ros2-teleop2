@@ -31,7 +31,7 @@ options = {
 }
 
 MAP_BUILDER.use_trajectory_builder_2d = true
-TRAJECTORY_BUILDER_2D.use_imu_data = true -- Enable when using IMU data
+TRAJECTORY_BUILDER_2D.use_imu_data = false -- Enable when using IMU data
 
 -- LiDAR settings
 TRAJECTORY_BUILDER_2D.min_range = 0.1

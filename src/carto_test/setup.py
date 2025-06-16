@@ -14,6 +14,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
         (os.path.join('share', package_name, 'config'), glob('config/*.lua')),
+        (os.path.join('share', package_name, 'map'), glob('map/*.pbstream')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
