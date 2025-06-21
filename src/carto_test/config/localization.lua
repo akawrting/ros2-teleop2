@@ -33,7 +33,7 @@ options = {
 
 -- 2D Trajectory 설정
 MAP_BUILDER.use_trajectory_builder_2d = true
-TRAJECTORY_BUILDER_2D.use_imu_data = flase -- IMU 데이터 사용 안 함
+TRAJECTORY_BUILDER_2D.use_imu_data = false -- IMU 데이터 사용 안 함
 
 -- 해상도 설정 (GridResolution). 0.1 = 10cm 단위, 여기서는 5cm
 TRAJECTORY_BUILDER_2D.submaps.grid_options_2d.resolution = 0.05
